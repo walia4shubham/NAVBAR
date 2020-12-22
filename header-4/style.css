@@ -1,0 +1,53 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+    color:whitesmoke
+}
+body{
+    background: url('https://i.imgur.com/iIEtZVa.jpg') no-repeat center center/cover  ;
+    height: 100vh;
+    
+}
+.nav_area ul{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.nav_area ul li{
+    list-style: none;
+    width:20%;
+}
+ul .ul2{
+    display: none;
+    flex-direction: column;
+    
+}
+
+.nav_area ul li:hover > ul{
+    display: flex;
+}
+.nav_area a{
+ text-transform: uppercase;
+ display: block;
+ background: #262626;
+ padding:15px;
+ text-decoration: none;
+}
+.ul2 li a{
+    width:274px;
+    text-align: center;
+}
+.nav_area a:hover{
+    background: #e84393;
+}
+@media (max-width:600px){
+.nav_area ul li, .ul2 li{
+   width: 100%;
+}
+.ul2 li a{
+    width: 100%;
+}
+}

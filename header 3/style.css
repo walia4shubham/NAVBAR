@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+li , a ,ul{
+    text-decoration: none;
+    list-style: none;
+    
+        font-family: 'Montserrat', sans-serif;
+        
+        font-size: 16px;
+        color: #edf0f1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24252A;
+    max-width: 100%;
+    padding: 8px 15px;
+}
+header ul li{
+    padding: 0px 13px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formsubmit{
+    /* padding: 0px 13px; */
+}
+.navbar ul li a{
+    padding: 0px 0px;
+    transition: all 0.3s ease 0s;
+}
+.navbar ul li a:hover{
+    color:#0088a9;
+    font-size: 17px;
+}
+#searchbar{
+    padding: 3px 14px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    font-size: 16px;
+    margin:0px 4px;
+}
+.inputform #btn{
+    padding: 3px 14px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgba(0,136,169,1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: #edf0f1;
+    font-size: 16px;
+
+}
+.inputform #btn:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+
+@media only screen and (min-width: 0px) and (max-width:750px){
+    header{
+        width: 100%;
+        flex-direction: column;
+        
+        
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+    }
+    #searchbar{
+        display: block;
+        flex-direction: column;
+
+    }
+    #btn{
+        display: block;
+        width: 100px;
+        margin: auto;
+    }
+}
